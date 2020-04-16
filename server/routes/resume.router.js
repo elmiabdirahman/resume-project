@@ -2,7 +2,7 @@ const express = require('express');
 const pool = require('../modules/pool');
 const router = express.Router();
 
-router.get('/resume', (req, res)=>{
+router.get('/home', (req, res)=>{
     console.log('home page for get route');
     const queryVideos = 'SELECT "id", "description", "title", "url" FROM "home"';
     
