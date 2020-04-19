@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Hompage from './image23.jpg';
+
 class homePage extends Component {
 
     componentDidMount() {
@@ -22,10 +24,12 @@ class homePage extends Component {
                         <di>
                             <h2>{item.description}</h2>
                             <h2>{item.title}</h2>
-                            <img src={item.url} alt={item.url} />
                         </di>
                     </div>
                     )}
+                </div>
+                <div>
+                    <img src={Hompage} alt="100 Holes For Hope" width='35%'  />
                 </div>
             </div>
         );
