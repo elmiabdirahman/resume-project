@@ -20,6 +20,7 @@ import homePage from '../homePage/homePage';
 import PhotosPage from '../PhotosPage/PhotosPage';
 import aboutPage from '../AboutPage/AboutPage';
 import MySkills from '../MySkills/MySkills';
+import PersonalEmail from '../PersonalEmail/PersonalEmail';
 
 import './App.css';
 
@@ -57,6 +58,11 @@ class App extends Component {
               exact
               path="/photos"
               component={PhotosPage}
+            />
+            <Route 
+              exact
+              path="/contact"
+              component={PersonalEmail}
             />
             {/* For protected routes, the view could show one of several things on the same route.
             Visiting localhost:3000/home will show the UserPage if the user is logged in.
