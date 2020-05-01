@@ -17,7 +17,6 @@ import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 import UserPage from '../UserPage/UserPage';
 import SecretsPage from '../SecretsPage/SecretsPage';
 import homePage from '../homePage/homePage';
-import PhotosPage from '../PhotosPage/PhotosPage';
 import aboutPage from '../AboutPage/AboutPage';
 import MySkills from '../MySkills/MySkills';
 import PersonalEmail from '../PersonalEmail/PersonalEmail';
@@ -53,11 +52,6 @@ class App extends Component {
               exact
               path="/skills"
               component={MySkills}
-            />
-            <Route
-              exact
-              path="/photos"
-              component={PhotosPage}
             />
             <Route 
               exact
