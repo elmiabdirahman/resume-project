@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../Nav/Nav'
+import './AboutPage.css';
 
 class AboutPage extends Component {
   render() {
@@ -7,10 +8,10 @@ class AboutPage extends Component {
       <div>
         <Nav />
         <div>
-          <h1>
+          <header>
             This about page is for anyone to read!
             Hello
-          </h1>
+          </header>
         </div>
       </div>
     );
