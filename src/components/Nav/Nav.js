@@ -109,17 +109,12 @@ class Nav extends Component {
             </Button>
             <Button>
             <Link className="nav-link" to="/skills" className={classes.buttonStyling}>
-              Resume
-            </Link>
-            </Button>
-            <Button>
-            <Link className="nav-link" to="/photos" className={classes.buttonStyling}>
-              Photos
+              Portfolio
             </Link>
             </Button>
             <Button>
             <Link className="nav-link" to="/contact" className={classes.buttonStyling}>
-              Email
+              Contact
             </Link>
             </Button>
             </span>
