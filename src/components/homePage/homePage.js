@@ -21,10 +21,10 @@ class homePage extends Component {
                 <div>
                     {this.props.homePageReducer.map( (item) => 
                     <div key= {item.id}>
-                        <di>
+                        <div>
                             <h2>{item.description}</h2>
                             <h2>{item.title}</h2>
-                        </di>
+                        </div>
                     </div>
                     )}
                 </div>
