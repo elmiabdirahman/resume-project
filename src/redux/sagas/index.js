@@ -6,6 +6,7 @@ import secretsSaga from './secretsSaga';
 
 import getHomePageSaga from './getHomeSaga';
 import getAboutPageSaga from './getAboutSaga';
+import getSkillPageSaga from './getSkillSaga';
 
 // rootSaga is the primary saga.
 // It bundles up all of the other sagas so our project can use them.
@@ -22,5 +23,6 @@ export default function* rootSaga() {
     secretsSaga(),
     getHomePageSaga(),
     getAboutPageSaga(),
+    getSkillPageSaga(),
   ]);
 }
