@@ -6,6 +6,7 @@ import secrets from './secretsReducer';
 
 import homePageReducer from './homeReducer';
 import aboutPageReducer from './aboutReducer';
+import skillPageReducer from './skillReducer';
 
 // rootReducer is the primary reducer for our entire project
 // It bundles up all of the other reducers so our project can use them.
@@ -20,6 +21,7 @@ const rootReducer = combineReducers({
   secrets,
   homePageReducer,
   aboutPageReducer,
+  skillPageReducer,
 });
 
 export default rootReducer;
