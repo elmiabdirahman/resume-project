@@ -26,4 +26,16 @@ router.get('/about', (req, res)=>{
     })
 });
 
+router.get('/skills', (req, res)=>{
+    console.log('about page for get route');
+    const queryVideos = 'SELECT "id", "skills" FROM "skills"';
+    
+    pool.query(queryVideos).then(( results ) =>{
+        res.send(results.rows);
+    }).catch( (error) =>{
+        console.log('Error from SELECT about quert ', error);
+        res.sendStatus(500);
+    })
+});
+
 module.exports = router;
