@@ -1,7 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import SocialFollow from "./SocialFollow"
+import {withStyles} from '@material-ui/core/styles';
+
+import './homePage.css';
 
 import Hompage from './image23.jpg';
+
+const styles = {
+    image: {
+        marginTop: '100%'
+      }
+};
+
 
 class homePage extends Component {
 
@@ -28,8 +39,11 @@ class homePage extends Component {
                     </div>
                     )}
                 </div>
+                <div className='image'>
+                    <img src={Hompage} alt="Elmi" style={{margin: '0 auto', padding: '1rem', borderRadius:500/2, width:120, height:120,}} />
+                </div>
                 <div>
-                    <img src={Hompage} alt="100 Holes For Hope" width='35%'  />
+                    <SocialFollow />
                 </div>
             </div>
         );
@@ -39,4 +53,4 @@ const putReduxStateOnProps = (reduxStore) => ({
     homePageReducer: reduxStore.homePageReducer
 });
 
-export default connect(putReduxStateOnProps) (homePage);
+export default connect(putReduxStateOnProps) (withStyles(styles) (homePage));
